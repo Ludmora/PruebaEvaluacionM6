@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/"><img src="@/assets/home.png" alt="home"></router-link> |
+      <router-link to="/listaJuegos"><img src="@/assets/game.png" alt="juegos"></router-link>|
+      <router-link to="/about">About</router-link>|
+      
+
+    
     </nav>
     <router-view/>
   </div>
@@ -15,10 +19,15 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  height: 100vh;
 }
 
 nav {
+  background-color: aliceblue;
   padding: 30px;
+  /* background-image: url('assets/pacman.gif');  */
+  text-align:start ;
 }
 
 nav a {
